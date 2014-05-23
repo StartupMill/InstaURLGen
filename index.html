@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>InstagramTest</title>
+
+</head>
+<body>
+<p>Instagram Link Tester</p>
+<!-- Generator -->
+<script language="JavaScript">
+var instaURL = 'http://instagram.com/p/o';
+var randText = randomString();
+
+function randomString() {
+	var chars = "-_0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+	var string_length = 9;
+	var randomstring = '';
+	for (var i=0; i<string_length; i++) {
+		var rnum = Math.floor(Math.random() * chars.length);
+		randomstring += chars.substring(rnum,rnum+1);
+	}
+	return randomstring;
+	}
+var output = '<a href="'+instaURL+randString()+'"/>'+instaURL+randString()+'</a><br>';
+for (var i = 1; i < 100; i++) {
+	document.write(output);
+}
+</script>
+<br>
+http://instagram.com/p/oQX6_5A8BO/
+
+</body>
+</html>
